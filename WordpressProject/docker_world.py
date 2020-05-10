@@ -20,8 +20,8 @@ while True:
 		os.system("systemctl start docker")
 		print("Docker is Started..")
 	elif ch==3:
-		os.system("curl -L 'https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)' -o /usr/local/bin/docker-compose")
-		os.system("chmod +x /usr/local/bin/docker-compose")
+		os.system("sudo curl -L 'https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)' -o /usr/local/bin/docker-compose")
+		os.system("sudo chmod +x /usr/local/bin/docker-compose")
 	elif ch==4:
 		os.system("docker images | grep mysql")
 		if os.system("echo $?")==1:
